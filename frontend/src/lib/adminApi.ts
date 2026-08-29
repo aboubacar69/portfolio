@@ -133,3 +133,11 @@ export async function fetchCurrentUser() {
     if (!res.ok) throw new AdminApiError('Session invalide.', res.status);
     return res.json();
 }
+
+
+export async function deleteMessage(id: number): Promise<void> {
+    const res = await authedFetch(`/contact/messages/${id}/`, { method: 'DELETE' });
+    if (!res.ok && res.status !== 204) {
+        throw new AdminApiError('Impossible de supprimer le message.', res.status);
+    }
+}
