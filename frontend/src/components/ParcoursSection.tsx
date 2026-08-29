@@ -14,7 +14,7 @@ const parcours: ParcoursItem[] = [
     year: '2016 — 2017',
     title: "Brevet d'Etudes",
     location: 'ETABLISSEMENT : GSK, LOCATION : COMORES (NTSAOUENI)',
-    description: 'Premiers pas dans la logique et les mathématiques, base de la pensée structurée.',
+    description: '',
     icon: BookOpen,
   },
   {

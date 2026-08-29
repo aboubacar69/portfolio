@@ -44,7 +44,7 @@ const AboutSection = () => {
               <span className="text-foreground">En dehors du code & de la bi</span>
             </p>
             <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
-              À part le dev et la Bi, je suis aussi passionné par les réseaux et l'infrastructure : comprendre comment les machines communiquent,
+              À part le dev et la Bi, je suis aussi passionné par le réseau : comprendre comment les machines communiquent,
               configurer des serveurs, explorer la sécurité réseau et le fonctionnement des protocoles.
             </p>
             <div className="mt-6 pt-4 border-t border-border">

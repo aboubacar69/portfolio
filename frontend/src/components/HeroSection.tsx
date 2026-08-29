@@ -31,7 +31,7 @@ const HeroSection = () => {
 
         <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed animate-fade-up-delay-2">
           Mon objectif principal est de pouvoir concevoir des solutions robustes, opérationnelles et adaptées aux besoins
-          <span className="text-foreground font-medium"> des entreprises </span>. Que vous ayez un projet quelque part
+          <span className="text-foreground font-medium"> des entreprises</span>.Que vous ayez un projet quelque part
           et que vous cherchiez un collaborateur, cette même exigence s'appliquera à notre travail commun.
         </p>
 
