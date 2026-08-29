@@ -10,7 +10,7 @@ const FooterSection = () => {
 
         <div className="flex justify-center gap-6 mb-8">
           <a
-            href="https://github.com"
+            href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-md border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
@@ -19,7 +19,7 @@ const FooterSection = () => {
             <Github size={20} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/feed/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-md border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
@@ -28,7 +28,7 @@ const FooterSection = () => {
             <Linkedin size={20} />
           </a>
           <a
-            href="mailto:contact@example.com"
+            href="mailto:saidmouinou.aboubacar20@gmail.com"
             className="p-3 rounded-md border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
             aria-label="Email"
           >
