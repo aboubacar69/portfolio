@@ -13,7 +13,7 @@ const BusinessIntelligenceSection = () => {
                     </p>
 
                     <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                        Ma spécialisation
+                        Spécialisation
                     </h2>
 
                 </div>

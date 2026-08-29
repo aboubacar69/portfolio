@@ -26,23 +26,26 @@ const AboutSection = () => {
               <span className="text-foreground">Junior, mais engagé</span>
             </p>
             <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
-              Je suis développeur junior, mais sérieux dans mon travail. Je prends le temps de comprendre, de tester et d'améliorer. Chaque projet est une occasion d'apprendre et de livrer un code propre, maintenable et utile.
+              Dev junior, mais sérieux dans mon travail.
+              Je prends le temps de comprendre, de tester et d'améliorer.
+              N'oubliez pas que dans l'IT en particulier le développement logiciel, chaque projet est une occasion d'apprendre
+              et de découvrir des nouvelles technologies.
             </p>
             <p className="text-muted-foreground mt-6">
               <span className="text-primary">##</span>{' '}
               <span className="text-foreground">Ma philosophie</span>
             </p>
             <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
-              J'aime quand le code est propre, quand les routes sont logiques, et quand une API répond exactement comme prévu. Avec Django, je construis des applications backend structurées, sécurisées et prêtes à évoluer.
+              Rien n'est plus satisfaisant qu'un script propre et bien structuré, des routes logiques,
+              et une API qui répond parfaitement aux attentes. Que l'on soit senior ou junior, cela devrait être la devise de chacun.
             </p>
             <p className="text-muted-foreground mt-6">
               <span className="text-primary">##</span>{' '}
-              <span className="text-foreground">En dehors du code</span>
+              <span className="text-foreground">En dehors du code & de la bi</span>
             </p>
             <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
-              À part le développement, je suis aussi passionné par les réseaux et l'infrastructure : comprendre comment les machines communiquent,
-              configurer des serveurs, explorer la sécurité réseau et le fonctionnement des protocoles. J'aime apprendre en continu, que ce soit côté système,
-              DevOps ou nouvelles technologies.
+              À part le dev et la Bi, je suis aussi passionné par les réseaux et l'infrastructure : comprendre comment les machines communiquent,
+              configurer des serveurs, explorer la sécurité réseau et le fonctionnement des protocoles.
             </p>
             <div className="mt-6 pt-4 border-t border-border">
               <p className="text-primary text-xs tracking-wider">

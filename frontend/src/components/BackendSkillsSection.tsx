@@ -38,7 +38,7 @@ const BackendSkillsSection = () => {
                         <span className="text-muted-foreground">$</span> cat backend_skills.json
                     </p>
                     <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                        Développement Backend
+                        Dev Backend
                     </h2>
                 </div>
 
@@ -50,7 +50,8 @@ const BackendSkillsSection = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, amount: 0.3 }}
                             transition={{ duration: 0.5, delay: index * 0.1 }}
-                            className="group p-6 rounded-lg border border-border bg-card hover:border-primary/40 hover:border-glow transition-all duration-300"
+                            className="group p-6 rounded-lg border border-border bg-card hover:border-primary/40
+                            hover:border-glow transition-all duration-300"
                         >
                             <div className="flex items-start gap-4">
                                 <div className="p-2 rounded-md bg-secondary text-primary">
