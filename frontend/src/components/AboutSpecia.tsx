@@ -44,7 +44,7 @@ const BusinessIntelligenceSection = () => {
 
                         <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
                             Spécialisé dans l'analyse et la valorisation des données
-                            pour produire des informations fiables et utiles à la décision.
+                            pour produire des informations pertinentes et utiles à la décision.
                         </p>
 
                         <p className="text-muted-foreground mt-6">
