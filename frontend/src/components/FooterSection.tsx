@@ -28,7 +28,7 @@ const FooterSection = () => {
             <Linkedin size={20} />
           </a>
           <a
-            href="saidmouinou.aboubacar20@gmail.com"
+            href="mailto:saidmouinou2023@gmail.com"
             className="p-3 rounded-md border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
             aria-label="Email"
           >
