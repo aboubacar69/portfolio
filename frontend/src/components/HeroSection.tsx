@@ -1,4 +1,4 @@
-import { Download } from 'lucide-react';
+import { Eye } from 'lucide-react';
 
 const HeroSection = () => {
   return (
@@ -57,11 +57,12 @@ const HeroSection = () => {
           </a>
           <a
             href="/cv.pdf"
-            download
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 border border-primary/40 text-primary font-mono text-sm font-medium rounded-md hover:bg-primary/10 transition-colors"
           >
-            <Download size={16} />
-            Download CV
+            <Eye size={16} />
+            voir CV
           </a>
         </div>
       </div>
