@@ -1,6 +1,12 @@
 import { Github, Linkedin, Mail } from 'lucide-react';
+import { toast } from 'sonner';
 
 const FooterSection = () => {
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText('saidmouinou.aboubacar20@gmail.com');
+    toast.success('Email copié !', { description: 'saidmouinou.aboubacar20@gmail.com' });
+  };
+
   return (
     <footer className="py-16 px-6 border-t border-border">
       <div className="max-w-4xl mx-auto text-center">
@@ -18,22 +24,24 @@ const FooterSection = () => {
           >
             <Github size={20} />
           </a>
+
           <a
-            href="https://www.linkedin.com/feed/"
+            href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-3 rounded-md border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
             aria-label="LinkedIn"
           >
+
             <Linkedin size={20} />
           </a>
-          <a
-            href="mailto:saidmouinou2023@gmail.com"
+          <button
+            onClick={handleCopyEmail}
             className="p-3 rounded-md border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
-            aria-label="Email"
+            aria-label="Copier l'email"
           >
             <Mail size={20} />
-          </a>
+          </button>
         </div>
 
         <p className="font-mono text-xs text-muted-foreground">
