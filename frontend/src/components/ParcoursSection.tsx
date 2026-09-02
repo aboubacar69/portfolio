@@ -39,7 +39,7 @@ const parcours: ParcoursItem[] = [
     icon: Code2,
   },
   {
-    year: '2027 — Aujourd\'hui',
+    year: '2027 — ........?',
     title: 'Dev Backend Junior, Spécialiste En BI ',
     location: 'Projets & expériences',
     description: 'Projets concrets en Django & DRF, montée en compétences sur la sécurité et le DevOps.',

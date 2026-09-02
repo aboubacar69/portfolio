@@ -55,7 +55,7 @@ const ContactSection = () => {
           </p>
           <h3 className="text-2xl md:text-2xl font-bold text-foreground">
             Un projet ou une opportunité à proposer ? <br />
-            Si c'est le cas, ce formulaire est à votre disposition
+            Ce formulaire est à votre disposition
             pour toute prise de contact
           </h3>
         </div>
