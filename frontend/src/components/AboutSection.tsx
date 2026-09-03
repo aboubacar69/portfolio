@@ -23,29 +23,36 @@ const AboutSection = () => {
           <div className="mt-6 space-y-4 font-mono text-sm leading-relaxed">
             <p className="text-muted-foreground">
               <span className="text-primary">##</span>{' '}
-              <span className="text-foreground">Junior, mais engagé</span>
+              <span className="text-foreground">Développeur Backend Django</span>
             </p>
             <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
-              Dev junior, mais sérieux dans mon travail.
-              Je prends le temps de comprendre, de tester et d'améliorer.
-              N'oubliez pas que dans l'IT en particulier le développement logiciel, chaque projet est une occasion d'apprendre
-              et de découvrir des nouvelles technologies.
+              Jeune développeur passionné par la conception d’applications
+              et la résolution de problèmes techniques.
+              Chaque projet représente une occasion d’approfondir mes connaissances,
+              d’expérimenter de nouvelles approches et d’améliorer la qualité de mon travail.
+              Je privilégie la compréhension, la rigueur et l’apprentissage continu
+              afin de construire des solutions fiables et maintenables.
             </p>
             <p className="text-muted-foreground mt-6">
               <span className="text-primary">##</span>{' '}
-              <span className="text-foreground">Ma philosophie</span>
+              <span className="text-foreground">Mon mindset</span>
             </p>
             <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
-              Rien n'est plus satisfaisant qu'un script propre et bien structuré, des routes logiques,
-              et une API qui répond parfaitement aux attentes. Que l'on soit senior ou junior, cela devrait être la devise de chacun.
+              J’accorde une attention particulière à la qualité, à la simplicité et à la maintenabilité du code.
+              Une architecture claire, des fonctionnalités cohérentes et des APIs bien conçues sont,
+              selon moi,essentielles à la création d’un logiciel fiable.
+              Au-delà du résultat, j’aime comprendre le problème, réfléchir à la solution
+              et chercher constamment à améliorer ce que je construis.
             </p>
             <p className="text-muted-foreground mt-6">
               <span className="text-primary">##</span>{' '}
-              <span className="text-foreground">En dehors du code & de la bi</span>
+              <span className="text-foreground">Au delà du code & de la bi</span>
             </p>
             <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
-              À part le dev et la Bi, je suis aussi passionné par le réseau : comprendre comment les machines communiquent,
-              configurer des serveurs, explorer la sécurité réseau et le fonctionnement des protocoles.
+              Mon intérêt pour l’informatique ne s’arrête pas au développement logiciel.
+              Je m’intéresse également aux réseaux, aux systèmes et aux infrastructures.
+              Comprendre comment les machines communiquent, configurer des environnements, explorer les protocoles réseau
+              et découvrir les enjeux de la sécurité informatique sont autant de sujets que j’aime approfondir
             </p>
             <div className="mt-6 pt-4 border-t border-border">
               <p className="text-primary text-xs tracking-wider">

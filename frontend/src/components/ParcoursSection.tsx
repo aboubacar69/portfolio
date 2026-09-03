@@ -11,39 +11,32 @@ interface ParcoursItem {
 
 const parcours: ParcoursItem[] = [
   {
-    year: '2016 — 2017',
-    title: "Brevet d'Etudes",
-    location: 'ETABLISSEMENT : GSK, LOCATION : COMORES (NTSAOUENI)',
-    description: '',
-    icon: BookOpen,
-  },
-  {
-    year: '2019 — 2020',
-    title: 'Baccalauréat scientifique',
-    location: 'ETABLISSEMENT : GSK, LOCATION : COMORES (NTSAOUENI)',
-    description: 'Premiers pas dans la logique et les mathématiques, base de la pensée structurée.',
-    icon: BookOpen,
-  },
-  {
-    year: '2020 — 2025',
-    title: "Licence en Génie Logiciel & Systèmes d'Information",
-    location: 'ETABLISSEMENT : Université de Gabès, LOCATION : TUNISIE (GABES)',
-    description: 'Découverte de la programmation, des algorithmes et des bases de données relationnelles.',
-    icon: GraduationCap,
-  },
-  {
-    year: '2025 — 2027',
+    year: '2025 — Ajourd\'hui',
     title: 'Spécialisation en Business Intelligence et Dev Backend (Django Rest Framework)',
-    location: 'ETABLISSEMENT : Université Cheikh Anta Diop De Dakar, LOCATION : SENEGAL (DAKAR)',
+    location: 'ETABLISSEMENT : Université Cheikh Anta Diop De Dakar, (SENEGAL)',
     description: "Approfondissement du backend avec Python, Django et la conception d'API REST.",
     icon: Code2,
   },
   {
-    year: '2027 — ........?',
-    title: 'Dev Backend Junior, Spécialiste En BI ',
-    location: 'Projets & expériences',
-    description: 'Projets concrets en Django & DRF, montée en compétences sur la sécurité et le DevOps.',
-    icon: Briefcase,
+    year: '2020 — 2025',
+    title: "Licence en Génie Logiciel & Systèmes d'Information",
+    location: 'ETABLISSEMENT : Université de Gabès, (TUNISIE)',
+    description: 'Découverte de la programmation, des algorithmes et des bases de données relationnelles.',
+    icon: GraduationCap,
+  },
+  {
+    year: '2019 — 2020',
+    title: 'Baccalauréat scientifique',
+    location: 'ETABLISSEMENT : GSK, LOCATION : (COMORES)',
+    description: 'Premiers pas dans la logique et les mathématiques, base de la pensée structurée.',
+    icon: BookOpen,
+  },
+  {
+    year: '2016 — 2017',
+    title: "Brevet d'Etudes",
+    location: 'ETABLISSEMENT : GSK, (COMORES)',
+    description: '',
+    icon: BookOpen,
   },
 ];
 
