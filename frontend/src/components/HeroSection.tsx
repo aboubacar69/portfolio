@@ -25,14 +25,16 @@ const HeroSection = () => {
         </h1>
 
         <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed animate-fade-up-delay-2">
-          Je développe des solutions qui combinent <span className="text-foreground font-medium">Business Intelligence</span> et
-          <span className="text-foreground font-medium"> Développement Backend </span>.
+          Je développe des solutions qui combinent{' '}
+          <span className="text-foreground font-medium">Business Intelligence</span> et{' '}
+          <span className="text-foreground font-medium">Développement Backend</span>.
         </p>
 
         <p className="mt-6 text-lg text-muted-foreground max-w-xl leading-relaxed animate-fade-up-delay-2">
-          Mon objectif principal est de pouvoir concevoir des solutions robustes, opérationnelles et adaptées aux besoins
-          <span className="text-foreground font-medium"> des entreprises</span>. Que vous ayez un projet en particulier et que vous cherchiez un collaborateur,
-          cette même exigence s'appliquera à notre travail commun.
+          Mon objectif principal est de pouvoir concevoir des solutions robustes, opérationnelles et
+          adaptées aux besoins <span className="text-foreground font-medium">des entreprises</span>.
+          Que vous ayez un projet en particulier et que vous cherchiez un collaborateur, cette même
+          exigence s'appliquera à notre travail commun.
         </p>
 
         <div className="mt-8 flex items-center gap-4 animate-fade-up-delay-3">
