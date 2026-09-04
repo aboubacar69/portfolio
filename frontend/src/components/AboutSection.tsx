@@ -25,7 +25,7 @@ const AboutSection = () => {
               <span className="text-primary">##</span>{' '}
               <span className="text-foreground">Développeur Backend Django</span>
             </p>
-            <p className="text-muted-foreground pl-4 border-l-2 border-primary/30 text-justify">
+            <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
               Jeune développeur passionné par la conception d'applications et la résolution de
               problèmes techniques. Chaque projet représente une occasion d'approfondir mes
               connaissances, d'expérimenter de nouvelles approches et d'améliorer la qualité de mon
@@ -36,7 +36,7 @@ const AboutSection = () => {
               <span className="text-primary">##</span>{' '}
               <span className="text-foreground">Mon mindset</span>
             </p>
-            <p className="text-muted-foreground pl-4 border-l-2 border-primary/30 text-justify">
+            <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
               J'accorde une attention particulière à la qualité, à la simplicité et à la
               maintenabilité du code. Une architecture claire, des fonctionnalités cohérentes et des
               APIs bien conçues sont, selon moi, essentielles à la création d'un logiciel fiable.
@@ -47,7 +47,7 @@ const AboutSection = () => {
               <span className="text-primary">##</span>{' '}
               <span className="text-foreground">Au delà du code & de la bi</span>
             </p>
-            <p className="text-muted-foreground pl-4 border-l-2 border-primary/30 text-justify">
+            <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
               Mon intérêt pour l'informatique ne s'arrête pas au développement logiciel. Je m'intéresse
               également aux réseaux, aux systèmes et aux infrastructures. Comprendre comment les
               machines communiquent, configurer des environnements, explorer les protocoles réseau et
