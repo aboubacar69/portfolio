@@ -10,6 +10,7 @@ const ContactSection = () => {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState<Record<string, string>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSlowLoading, setIsSlowLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -24,8 +25,9 @@ const ContactSection = () => {
     }
     setErrors({});
     setIsSubmitting(true);
+    setIsSlowLoading(false);
     try {
-      await sendContactMessage(result.data);
+      await sendContactMessage(result.data, () => setIsSlowLoading(true));
       toast.success('Message envoyé !', {
         description: 'Merci, je vous répondrai dès que possible.',
       });
@@ -43,6 +45,7 @@ const ContactSection = () => {
       });
     } finally {
       setIsSubmitting(false);
+      setIsSlowLoading(false);
     }
   };
 
@@ -54,9 +57,8 @@ const ContactSection = () => {
             <span className="text-muted-foreground">$</span> ./contact --send
           </p>
           <h3 className="text-2xl md:text-2xl font-bold text-foreground">
-            Un projet ou une opportunité à proposer ? <br />
-            Ce formulaire est à votre disposition
-            pour toute prise de contact
+            Avez-vous un projet, une opportunité à me proposer ? <br />
+            Si oui, Veuillez me contacter sur ce formulaire
           </h3>
         </div>
 
@@ -118,6 +120,12 @@ const ContactSection = () => {
             {isSubmitting ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
             {isSubmitting ? 'Envoi...' : 'Envoyer'}
           </button>
+
+          {isSlowLoading && (
+            <p className="text-xs text-muted-foreground font-mono text-center animate-pulse">
+              Le serveur se réveille, cela peut prendre jusqu'à une minute la première fois...
+            </p>
+          )}
         </form>
       </div>
     </section>

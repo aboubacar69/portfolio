@@ -11,6 +11,7 @@ const AdminLogin = () => {
     const [form, setForm] = useState({ username: '', password: '' });
     const [errors, setErrors] = useState<Record<string, string>>({});
     const [isSubmitting, setIsSubmitting] = useState(false);
+    const [isSlowLoading, setIsSlowLoading] = useState(false);
 
     if (isLoggedIn()) {
         navigate('/admin', { replace: true });
@@ -29,6 +30,9 @@ const AdminLogin = () => {
         }
         setErrors({});
         setIsSubmitting(true);
+        setIsSlowLoading(false);
+
+        const slowTimer = setTimeout(() => setIsSlowLoading(true), 4000);
         try {
             await login(result.data);
             navigate('/admin', { replace: true });
@@ -37,7 +41,9 @@ const AdminLogin = () => {
                 description: err instanceof AdminApiError ? err.message : 'Veuillez réessayer.',
             });
         } finally {
+            clearTimeout(slowTimer);
             setIsSubmitting(false);
+            setIsSlowLoading(false);
         }
     };
 
@@ -87,6 +93,12 @@ const AdminLogin = () => {
                     <Button type="submit" disabled={isSubmitting} className="w-full font-mono">
                         {isSubmitting ? 'Connexion...' : 'Se connecter'}
                     </Button>
+
+                    {isSlowLoading && (
+                        <p className="text-xs text-muted-foreground font-mono text-center animate-pulse">
+                            Le serveur se réveille, cela peut prendre jusqu'à une minute...
+                        </p>
+                    )}
                 </form>
             </div>
         </div>
