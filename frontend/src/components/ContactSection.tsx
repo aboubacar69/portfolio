@@ -57,8 +57,9 @@ const ContactSection = () => {
             <span className="text-muted-foreground">$</span> ./contact --send
           </p>
           <h3 className="text-2xl md:text-2xl font-bold text-foreground">
-            Avez-vous un projet, une opportunité à me proposer ? <br />
-            Si oui, Veuillez me contacter sur ce formulaire
+            Un projet ou une opportunité à proposer ? <br />
+            Ce formulaire est à votre disposition pour toute prise
+            de contact
           </h3>
         </div>
 
