@@ -1,10 +1,38 @@
-import { Github, Linkedin, Mail } from 'lucide-react';
+import { Github, Linkedin, Mail, MessageCircle, Copy } from 'lucide-react';
 import { toast } from 'sonner';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+
+const EMAIL = 'ton.email@gmail.com';
+const WHATSAPP_NUMBER = '221XXXXXXXXX'; // format international, sans +, sans espaces, sans 00
+const SUBJECT = 'Contact depuis ton portfolio';
+const BODY = 'Bonjour, je souhaite échanger avec toi à propos de...';
+const WHATSAPP_MESSAGE = 'Bonjour, je te contacte depuis ton portfolio.';
+
+const enc = encodeURIComponent;
+
+const links = {
+  gmail: `https://mail.google.com/mail/?view=cm&fs=1&to=${enc(EMAIL)}&su=${enc(SUBJECT)}&body=${enc(BODY)}`,
+  outlook: `https://outlook.live.com/mail/0/deeplink/compose?to=${enc(EMAIL)}&subject=${enc(SUBJECT)}&body=${enc(BODY)}`,
+  mailto: `mailto:${EMAIL}?subject=${enc(SUBJECT)}&body=${enc(BODY)}`,
+  whatsapp: `https://wa.me/${WHATSAPP_NUMBER}?text=${enc(WHATSAPP_MESSAGE)}`,
+};
+
+const iconBtn =
+  'p-3 rounded-md border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors';
 
 const FooterSection = () => {
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText('saidmouinou.aboubacar20@gmail.com');
-    toast.success('Email copié !', { description: 'saidmouinou.aboubacar20@gmail.com' });
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      toast.success('Email copié !', { description: EMAIL });
+    } catch {
+      toast.error('Impossible de copier', { description: EMAIL });
+    }
   };
 
   return (
@@ -19,7 +47,7 @@ const FooterSection = () => {
             href="https://github.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-md border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+            className={iconBtn}
             aria-label="GitHub"
           >
             <Github size={20} />
@@ -29,19 +57,45 @@ const FooterSection = () => {
             href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-md border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
+            className={iconBtn}
             aria-label="LinkedIn"
           >
-
             <Linkedin size={20} />
           </a>
-          <button
-            onClick={handleCopyEmail}
-            className="p-3 rounded-md border border-border text-muted-foreground hover:text-primary hover:border-primary transition-colors"
-            aria-label="Copier l'email"
-          >
-            <Mail size={20} />
-          </button>
+
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <button className={iconBtn} aria-label="Me contacter">
+                <Mail size={20} />
+              </button>
+            </DropdownMenuTrigger>
+
+            <DropdownMenuContent align="center" className="font-mono">
+              <DropdownMenuItem asChild>
+                <a href={links.gmail} target="_blank" rel="noopener noreferrer">
+                  <Mail size={16} className="mr-2" /> Gmail
+                </a>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <a href={links.outlook} target="_blank" rel="noopener noreferrer">
+                  <Mail size={16} className="mr-2" /> Outlook
+                </a>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <a href={links.mailto}>
+                  <Mail size={16} className="mr-2" /> App mail par défaut
+                </a>
+              </DropdownMenuItem>
+              <DropdownMenuItem asChild>
+                <a href={links.whatsapp} target="_blank" rel="noopener noreferrer">
+                  <MessageCircle size={16} className="mr-2" /> WhatsApp
+                </a>
+              </DropdownMenuItem>
+              <DropdownMenuItem onSelect={handleCopyEmail}>
+                <Copy size={16} className="mr-2" /> Copier l'email
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
         </div>
 
         <p className="font-mono text-xs text-muted-foreground">

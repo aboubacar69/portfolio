@@ -27,7 +27,7 @@ const parcours: ParcoursItem[] = [
   {
     year: '2019 — 2020',
     title: 'Baccalauréat scientifique',
-    location: 'ETABLISSEMENT : GSK, LOCATION : (COMORES)',
+    location: 'ETABLISSEMENT : GSK, (COMORES)',
     description: 'Premiers pas dans la logique et les mathématiques, base de la pensée structurée.',
     icon: BookOpen,
   },
