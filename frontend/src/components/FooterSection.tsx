@@ -11,7 +11,7 @@ const EMAIL = 'saidmouinou.aboubacar20@gmail.com';
 const WHATSAPP_NUMBER = '221788220989';
 const SUBJECT = 'Contact depuis ton portfolio';
 const BODY = '';
-const WHATSAPP_MESSAGE = 'Bonjour, je te contacte depuis ton portfolio.';
+const WHATSAPP_MESSAGE = '';
 
 const enc = encodeURIComponent;
 
@@ -67,21 +67,10 @@ const FooterSection = () => {
                 <Mail size={20} />
               </button>
             </DropdownMenuTrigger>
-
             <DropdownMenuContent align="center" className="font-mono">
               <DropdownMenuItem asChild>
                 <a href={links.gmail} target="_blank" rel="noopener noreferrer">
                   <Mail size={16} className="mr-2" /> Gmail
-                </a>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <a href={links.outlook} target="_blank" rel="noopener noreferrer">
-                  <Mail size={16} className="mr-2" /> Outlook
-                </a>
-              </DropdownMenuItem>
-              <DropdownMenuItem asChild>
-                <a href={links.mailto}>
-                  <Mail size={16} className="mr-2" /> App mail par défaut
                 </a>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
