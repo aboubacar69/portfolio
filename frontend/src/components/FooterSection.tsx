@@ -8,17 +8,15 @@ import {
 } from '@/components/ui/dropdown-menu';
 
 const EMAIL = 'saidmouinou.aboubacar20@gmail.com';
-const WHATSAPP_NUMBER = '221XXXXXXXXX'; // format international, sans +, sans espaces, sans 00
+const WHATSAPP_NUMBER = '221788220989';
 const SUBJECT = 'Contact depuis ton portfolio';
-const BODY = 'Bonjour, je souhaite échanger avec toi à propos de...';
+const BODY = '';
 const WHATSAPP_MESSAGE = 'Bonjour, je te contacte depuis ton portfolio.';
 
 const enc = encodeURIComponent;
 
 const links = {
   gmail: `https://mail.google.com/mail/?view=cm&fs=1&to=${enc(EMAIL)}&su=${enc(SUBJECT)}&body=${enc(BODY)}`,
-  outlook: `https://outlook.live.com/mail/0/deeplink/compose?to=${enc(EMAIL)}&subject=${enc(SUBJECT)}&body=${enc(BODY)}`,
-  mailto: `mailto:${EMAIL}?subject=${enc(SUBJECT)}&body=${enc(BODY)}`,
   whatsapp: `https://wa.me/${WHATSAPP_NUMBER}?text=${enc(WHATSAPP_MESSAGE)}`,
 };
 
