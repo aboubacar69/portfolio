@@ -7,7 +7,7 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
-const EMAIL = 'ton.email@gmail.com';
+const EMAIL = 'saidmouinou.aboubacar20@gmail.com';
 const WHATSAPP_NUMBER = '221XXXXXXXXX'; // format international, sans +, sans espaces, sans 00
 const SUBJECT = 'Contact depuis ton portfolio';
 const BODY = 'Bonjour, je souhaite échanger avec toi à propos de...';
