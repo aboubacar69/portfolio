@@ -17,15 +17,15 @@ const Index = () => {
         <BiSkillsSection />
       </Reveal>
       <Reveal>
-        <AboutSpecia />
-      </Reveal>
-      <Reveal>
         <BackendSkillsSection />
       </Reveal>
       <Reveal>
         <ProjectsSection />
       </Reveal>
       <Reveal>
+        <Reveal>
+          <AboutSpecia />
+        </Reveal>
         <AboutSection />
       </Reveal>
       <ParcoursSection />
