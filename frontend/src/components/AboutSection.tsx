@@ -27,9 +27,10 @@ const AboutSection = () => {
             </p>
             <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
               Jeune développeur, Spécialiste en Bi, passionné par la conception d'applications et la résolution de
-              problèmes dans le secteur du Business Intelligence. Chaque projet représente une occasion d'approfondir mes
+              problèmes dans le secteur du Business Intelligence. <br />
+              Chaque projet représente une occasion d'approfondir mes
               connaissances, d'expérimenter de nouvelles approches et d'améliorer la qualité de mon
-              travail.
+              travail.<br />
               Je privilégie la compréhension, la rigueur et l'apprentissage continu afin de
               construire des solutions fiables et maintenables.
             </p>
@@ -39,13 +40,14 @@ const AboutSection = () => {
             </p>
             <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
               J'accorde une attention particulière à la qualité, à la simplicité et à la
-              maintenabilité du code.
+              maintenabilité du code. <br />
+
               Une architecture claire, des fonctionnalités cohérentes et des
-              APIs bien documentées et conçues que ce soit en Dev côté Serveur ou en Bi sont selon moi, fondamentales dans ce domaine.
-              Au-delà du résultat, un critère crucial en IT est la maîtrise du sujet dont vous êtes amenés à traiter.
+              APIs bien documentées et conçues que ce soit en Dev côté Serveur ou en Bi sont selon moi, fondamentales dans ce domaine.<br />              Au-delà du résultat, un critère crucial en IT est la maîtrise du sujet dont vous êtes amenés à traiter.
 
               Une thématique mal comprise par l'auteur peut potentiellement fonctionner à court terme, mais vous être fatale
-              sur le long terme.
+              sur le long terme. <br />
+
               Je m'efforce donc à comprendre la problèmatique en amont, réfléchir à la solution et chercher
               constamment à améliorer ce que je construis.
             </p>
@@ -54,8 +56,8 @@ const AboutSection = () => {
               <span className="text-foreground">Au delà du code & de la bi</span>
             </p>
             <p className="text-muted-foreground pl-4 border-l-2 border-primary/30">
-              Mon intérêt pour l'IT ne se limite à la Bi et au développement logiciel.
-              Je m'intéresse également aux Systèmes Réseaux. Comprendre comment les
+              Mon intérêt pour l'IT ne se limite à la Bi et au développement logiciel. <br />
+              Je m'intéresse également aux Systèmes Réseaux, comprendre comment les
               machines communiquent, configurer des environnements, explorer les protocoles réseau et
               découvrir les enjeux de la sécurité informatique sont tout autant de sujets que j'aime
               explorer.
