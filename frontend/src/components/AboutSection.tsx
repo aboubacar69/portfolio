@@ -43,7 +43,9 @@ const AboutSection = () => {
               maintenabilité du code. <br />
 
               Une architecture claire, des fonctionnalités cohérentes et des
-              APIs bien documentées et conçues que ce soit en Dev côté Serveur ou en Bi sont selon moi, fondamentales dans ce domaine.<br />              Au-delà du résultat, un critère crucial en IT est la maîtrise du sujet dont vous êtes amenés à traiter.
+              APIs bien documentées et conçues que ce soit en Dev côté Serveur ou en Bi sont selon moi, fondamentales dans ce domaine.<br />
+
+              Au-delà du résultat, un critère crucial en IT est la maîtrise du sujet dont vous êtes amenés à traiter. <br />
 
               Une thématique mal comprise par l'auteur peut potentiellement fonctionner à court terme, mais vous être fatale
               sur le long terme. <br />
@@ -64,7 +66,7 @@ const AboutSection = () => {
             </p>
             <div className="mt-6 pt-4 border-t border-border">
               <p className="text-primary text-xs tracking-wider">
-                Toujours en apprentissage, toujours prêt à relever de nouveaux défis.
+                Business Intelligence → Backend DRF → Mindset
               </p>
             </div>
           </div>
