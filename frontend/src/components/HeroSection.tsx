@@ -19,7 +19,7 @@ const HeroSection = () => {
         <h1 className="text-4xl md:text-6xl font-mono font-bold text-foreground
           animate-fade-up-delay-1 leading-tight">
           Aboubacar Said Mouinou Spécialiste en{' '}
-          <span className="text-primary text-glow">Business Intelligence, Developpement Backend</span>
+          <span className="text-primary text-glow">Business Intelligence, Dev Backend</span>
           <br />
           DRF (Django Rest Framework)
         </h1>
